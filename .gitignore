@@ -4,6 +4,9 @@ SOS/SST-2_test/
 SOS/sentiment_data/
 RAP/BadNet_SL_RAP/
 RAP/SST-2_test/
+RAP/notebooks/SST-2_clean_train/
+RAP/notebooks/SST-2_SL_cf_defensed/
+RAP/notebooks/sent_embeddings.json
 
 # Byte-compiled / optimized / DLL files
 SOS/__pycache__/

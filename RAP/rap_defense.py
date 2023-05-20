@@ -151,7 +151,8 @@ def rap_poison(text_list, trigger_words_list, trigger_type='word', seed=1234):
 
 if __name__ == '__main__':
     SEED = 1234
-    device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+    # device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+    device = torch.device('mps') if torch.backedns.mps.is_available() else torch.device('cpu')
     parser = argparse.ArgumentParser(description='RAP')
     parser.add_argument('--seed', type=int, default=1234, help='seed')
     parser.add_argument('--protect_model_path', type=str, help='protect model path')
